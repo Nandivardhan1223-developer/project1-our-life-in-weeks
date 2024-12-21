@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IE+Guides&display=swap');
+*{
+    font-family: 'Montserrat','sans-serif';
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url('nature1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    color: aliceblue;
+    text-align: center;
+    background-color: aqua;
+    height: 800px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+    background: rgba(225, 225, 225, 0.3);
+    border-radius: 15px;
+    border-top: 2px solid rgb(94, 29, 119);
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+}
+.container h1{
+    font-size: 2.3rem;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgba(37, 148, 9, 0.3);
+    font-style: italic;
+}
+.container p{
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgba(37, 148, 9, 0.3);
+    font-style: italic;
+    font-size: 1.5rem;
+}
+#result{
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px rgba(37, 148, 9, 0.3);
+}
+#displayanswer{
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+
+}
+#ageinp{
+    width: 100%;
+    background-color: blanchedalmond;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 5px 5px 5px rgba(167, 25, 180, 0.3);
+    border-radius: 10px;
+}
+#ageinp::placeholder{
+    color: rgb(19, 18, 18);
+    text-shadow: 5px 5px 5px rgba(247, 4, 174, 0.3);
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+#ageinp:focus{
+    outline: none;
+    background-color: rgb(247, 250, 249);
+}
+.btns{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(189, 177, 201);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+.btn:hover{
+    background-color: rgb(219, 180, 132);
+    color: aqua;
+    
+}
+
+.btn:focus{
+    outline: none;
+}
+.btns #refreshtag{
+    display: none;
+}
+.alert1{
+    display: none;
+}
+.alert1.active{
+    display: block;
+}
+.alert2{
+    display: none;
+}
+.alert2.active{
+    display: block;
+}
+.answer{
+    display: none;
+}
+.answer.active{
+    display: block;
+}
+
+@media(max-width:800px){
+    .container{
+        width: 65vw;
+
+    }
+    .container h1{
+        font-size: 2rem;
+    }
+    .container p{
+        font-size:1.2rem ;
+    }
+}
+@media(max-width:550px){
+    .container{
+        width: 77vw;
+
+    }
+    .container h1{
+        font-size: 1.5rem;
+    }
+    .container p{
+        font-size:1rem ;
+    }
+}
+@media(max-width:400px){
+    .container{
+        width: 89vw;
+
+    }
+    .container h1{
+        font-size: 1.2rem;
+    }
+    .container p{
+        font: size 0.75rem;
+    }
+}
+
