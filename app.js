@@ -11,6 +11,7 @@ calcbtn.addEventListener("click",function(){
     age=ageinp.value.trim();
     if(age==""){
         clearInterval(timer);
+        result.innerHTML="";
         let alert1=document.querySelector('.alert1');
         alert1.classList.add('active');
         timer=setInterval(function(){
@@ -18,6 +19,7 @@ calcbtn.addEventListener("click",function(){
         },3000)
     }else if(isNaN(age)){
         clearInterval(timer);
+        result.innerHTML="";
         let alert2=document.querySelector('.alert2');
         alert2.classList.add('active');
         timer=setInterval(function(){
